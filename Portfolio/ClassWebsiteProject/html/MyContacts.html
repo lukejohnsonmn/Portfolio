@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Contacts</title>
+        <link rel="stylesheet" href="../css/style.css">
+        
+    </head>
+    <body>
+        <nav>
+            <a href="../../Coursework.html">Back to Portfolio Website</a>
+            <a href="MyForm.html">My Form</a>
+            <a href="MyWidgets.html">My Widgets</a>
+        </nav>
+        <h1>My Contacts</h1>
+        <div id="contactsContainer">
+            <div id="contacts">
+                <table id="contactsTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact Category</th>
+                        <th>Location</th>
+                        <th>Contact Information</th>
+                        <th>email</th>
+                        <th>Website</th>
+                    </tr>
+                    <tr class="even-row" onmouseover="chgImg('../img/Shepherd.jpg', 'Shepherd Labs', 'img0'); showImg('img1')" onmouseout="hideImg('img1')">
+                        <td>Daniel J Challou</td>
+                        <td>Academic</td>
+                        <td>3-383 Shepherd Labs, <br>100 Union Street SE, <br>Minneapolis, MN 55455</td>
+                        <td>Teacher in CSCI 4131 (002) Internet Programming (Spring 2022)<br><img id="img1" src="../img/Shepherd.jpg" alt="Shepherd Labs" style="visibility: hidden"></td>
+                        <td><a href="mailto:chal0006@umn.edu">chal0006@umn.edu</a></td>
+                        <td><a href="https://cse.umn.edu/cs/dan-challou">Dan Challou CS Department</a></td>
+                    </tr>
+                    <tr onmouseover="chgImg('../img/keller.jpg', 'Keller Hall', 'img0'); showImg('img2')" onmouseout="hideImg('img2')">
+                        <td>Tianming Cui</td>
+                        <td>Academic</td>
+                        <td>2-209 Keller Hall, <br>200 Union Street SE, <br>Minneapolis, MN 55455</td>
+                        <td>TA in CSCI 4131 (002) Internet Programming (Spring 2022)<br><img id="img2" src="../img/keller.jpg" alt="Keller Hall" style="visibility: hidden"></td>
+                        <td><a href="mailto:cuixx327@umn.edu">cuixx327@umn.edu</a></td>
+                        <td><a href="https://cse.umn.edu/cs">CS Department Home Page</a></td>
+                    </tr>
+                    <tr class="even-row" onmouseover="chgImg('../img/keller.jpg', 'Keller Hall', 'img0'); showImg('img3')" onmouseout="hideImg('img3')">
+                        <td>Thomas Nguyen</td>
+                        <td>Academic</td>
+                        <td>2-209 Keller Hall, <br>200 Union Street SE, <br>Minneapolis, MN 55455</td>
+                        <td>TA in CSCI 4131 (002) Internet Programming (Spring 2022)<br><img id="img3" src="../img/keller.jpg" alt="Keller Hall" style="visibility: hidden"></td>
+                        <td><a href="mailto:nguy3817@umn.edu">nguy3817@umn.edu</a></td>
+                        <td><a href="https://cse.umn.edu/cs">CS Department Home Page</a></td>
+                    </tr>
+                    <tr onmouseover="chgImg('../img/keller.jpg', 'Keller Hall', 'img0'); showImg('img4')" onmouseout="hideImg('img4')">
+                        <td>Yizhe Wang</td>
+                        <td>Academic</td>
+                        <td>2-209 Keller Hall, <br>200 Union Street SE, <br>Minneapolis, MN 55455</td>
+                        <td>TA in CSCI 4131 (002) Internet Programming (Spring 2022)<br><img id="img4" src="../img/keller.jpg" alt="Keller Hall" style="visibility: hidden"></td>
+                        <td><a href="mailto:wang5959@umn.edu">wang5959@umn.edu</a></td>
+                        <td><a href="https://cse.umn.edu/cs">CS Department Home Page</a></td>
+                    </tr>
+                    <tr class="even-row" onmouseover="chgImg('../img/keller.jpg', 'Keller Hall', 'img0'); showImg('img5')" onmouseout="hideImg('img5')">
+                        <td>Zejun Zhang</td>
+                        <td>Academic</td>
+                        <td>2-209 Keller Hall, <br>200 Union Street SE, <br>Minneapolis, MN 55455</td>
+                        <td>TA in CSCI 4131 (002) Internet Programming (Spring 2022)<br><img id="img5" src="../img/keller.jpg" alt="Keller Hall" style="visibility: hidden"></td>
+                        <td><a href="mailto:zhan7565@umn.edu">zhan7565@umn.edu</a></td>
+                        <td><a href="https://cse.umn.edu/cs">CS Department Home Page</a></td>
+                    </tr>
+                    <tr onmouseover="chgImg('../img/morrill.jpg', 'Morril Hall', 'img0'); showImg('img6')" onmouseout="hideImg('img6')">
+                        <td>Kelly Thomas</td>
+                        <td>Industry</td>
+                        <td>Morrill Hall, <br>100 Church Street Se, <br>Minneapolis, MN 55455</td>
+                        <td>Undergraduate Academic Advisor<br><img id="img6" src="../img/morrill.jpg" alt="Shepherd Labs" style="visibility: hidden"></td>
+                        <td><a href="mailto:csciug@umn.edu">csciug@umn.edu</a></td>
+                        <td><a href="https://cse.umn.edu/cs/news/cse-advisor-kelly-thomas-wins-award-inclusivity-and-advocacy">CS&E advisor Kelly Thomas</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="bigImage">
+                <img id="img0" src="../img/gophers-mascot.png" alt="Gopher Mascot">
+                <h1 class="goldHeader">Distance Calculator</h1>
+                <p id="calcLatLng">Latitude: 44.9727, Longitude: -93.2354</p>
+                <p id="calcDist">Distance (meters): 0</p>
+            </div>
+        </div>
+
+        <div id="mapsContainer">
+
+            <div id="routeDirections" hidden>
+                <h1 class="goldHeader">Route Directions</h1>
+            </div>
+
+            <div id="map"></div>
+
+            <div id="inputTables">
+                <table id="placesTable">
+                    <tr>
+                        <td><label for="places">Find</label></td>
+                        <td>
+                            <select name="places" id="places" class="dropdown" onchange="toggleOther()">
+                                <option value="restaurant">Restaurant</option>
+                                <option value="hospital">Hospital</option>
+                                <option value="parking">Parking</option>
+                                <option value="supermarket">Supermarket</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="text" name="other" id="other" class="text-basic" value="Enter Other Places" onclick="this.value=''" hidden></td>
+                    </tr>
+                    <tr>
+                        <td><label for="radiusMeters">Within (meters)</label></td>
+                        <td class="leftSide"><input type="number" name="radiusMeters" id="radiusMeters" class="text-basic"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button onclick="findPlaces(document.getElementById('places').value,document.getElementById('radiusMeters').value)">Search</button></td>
+                    </tr>
+                </table>
+                <table id="directionsTable">
+                    <tr>
+                        <td><label for="names">Take me to:</label></td>
+                        <td>
+                            <select name="names" id="names" class="dropdown" onchange="toggleOther()">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="customLocation">From</label></td>
+                        <td class="leftSide"><input type="text" name="customLocation" id="customLocation" class="text-basic" value="Default (current location)" onclick="this.value=''"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="radWalk">WALK</label><br>
+                            <label for="radDRIVE">DRIVE</label><br>
+                            <label for="radTrans">TRANS</label>
+                        </td>
+                        <td class="leftSide">
+                            <input type="radio" name="transportation" value="WALKING" id="radWalk" checked><br>
+                            <input type="radio" name="transportation" value="DRIVING" id="radDRIVE"><br>
+                            <input type="radio" name="transportation" value="TRANSIT" id="radTrans">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button onclick="createRoute()">Go</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        
+        
+        <script src="../js/myScripts.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtmF_RHMC8J12bMi5LGhMtcGjl-4KWBGU&libraries=places&callback=initMap" async defer></script>
+
+    </body>
+</html>
